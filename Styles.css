@@ -1,12 +1,58 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-VariableFont_wdth\,wght.ttf")
+    format("ttf")
+}
 .title {
+    
     text-align: center;
     color: #ffffff;
     background-color: #48ff76;
-    max-width:25%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    max-width: fit-content;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left:50%;
+    padding-right:50%;
     border-radius: 0% 0% 7% 7%
 }
 .header {
-    background-color:antiquewhite;
+    max-height: 20px;
+    max-height: 100px;
+}
+.slogan {
+    text-align: center;
+}
+.highlight {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display:block;
+}
+header {
+    position: relative;
+}
+nav {
+    border-radius: 10% 10% 10% 10%;
+    background: rgb(67, 67, 67);
+    position: absolute;
+
+}
+nav a {
+    display:block;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+@media (min-width: 600px){
+    nav {
+        display:flex;
+    }
+    .hamburger-icon {
+        display:none;
+    }
 }
