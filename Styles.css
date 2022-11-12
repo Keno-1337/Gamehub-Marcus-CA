@@ -63,6 +63,7 @@ body {
     font-size: 40px;
     text-align: center;
     font-family: open-sans-regular;
+    margin-bottom: 5%;
 }
 .highlight {
     color:antiquewhite;
@@ -113,11 +114,11 @@ body {
     font-family: arial;
 }
 .BrowseContainer {
-    padding: 20px;
+    padding: 10px;
     display: grid;
     grid-gap: 1%;
-    grid-template-rows: repeat(auto-fit, minmax(305px, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
 .Price {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -141,31 +142,38 @@ body {
     border-color: #FFFFFF;
     border-width: 2px;
   }
-.ContactContainer {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
-}
-.ContactSection_Image {
-    max-width:350px;
-    max-height:auto;
-    float:top;
-}
-.Contact_us {
-    text-align: center;
-    color: #FCFCFC;
+.Contact_us,
+.contact_Visit {
+    font-size: 35px;
+    font-family: open-sans-300italic;
+    color: #3a3a3a;
 }
 .contact_credentials {
-    text-align: left;
     margin-left: 25px;
     padding-bottom: 15px;
 }
-
+.contact_Visit {
+    margin-top: 15%;
+}
+.contact_Adress {
+    font-size: 35px;
+}
 .ContactRemote {
     font-size: 35px;
     background: rgba(158, 51, 170, 0.4);
     border-radius: 7%;
     max-width: 450px;
+    padding-right: 5%
+}
+.ContactRemote img {
+    max-width:350px;
+    max-height:auto;
+    float:top;
+}
+.PoolGuys {
+    padding-top: 15%;
+    padding-left: 10%;
+    border-radius: 7%;
 }
 .ContactLocation {
     font-size: 35px;
@@ -176,8 +184,59 @@ body {
 .ContactContainer img {
     justify-content:right;
 }
+.ContactLocal {
+    padding-left: 8%;
+    padding-top: 5%;
+    font-family: open-sans-regular;
+    padding-bottom:5%;
+}
+.ContactLocal img {
+    float:right;
+    max-width: 355px;
+    max-height: auto;
+}
 h2 {
     font-size: 25px;
+}
+.History_header {
+    font-family: open-sans-regular;
+    text-align: center;
+}
+.History_section1 {
+    padding-left: 25%;
+    align-content: center;
+    max-width: 850px;
+}
+.SomeHistory,
+.SomeHistory3 {
+    padding-left: 10%;
+    font-family: open-sans-regular;
+    font-size: 25px;
+}
+.SomeHistory img,
+.SomeHistory3 img {
+    max-width: 355px;
+    border-radius: 7%;
+    float:left;
+    padding-right: 5%;
+}
+.Somehistory2 {
+    font-family: open-sans-regular;
+    font-size: 25px;
+    padding-left: 9%;
+    padding-right: 12%;
+    padding-top: 15%;
+}
+.Somehistory2 img {
+    max-width: 250px;
+    max-height: auto;
+    float:right;
+    padding-left: 5%;
+    border-radius: 7%;
+}
+.SomeHistory3 {
+    padding-top: 25%;
+    padding-bottom: 5%;
 }
 nav,
 #menu-checkbox {
@@ -201,11 +260,19 @@ nav a {
     color: #fff;
     padding: 10px 20px;
 }
-@media (max-width: 1600px) {
-    .ContactThings {
+@media (max-width: 740px) {
+    .SomeHistory img {
         display:block;
     }
 }
+
+/*@media (max-width: 1600px) {  TOFIX
+    .ContactThings {
+        text-align: center;
+    }
+}
+*/
+
 @media (min-width: 600px){
     nav {
         display:flex;
