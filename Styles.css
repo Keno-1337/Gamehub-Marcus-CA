@@ -3,27 +3,152 @@
     src: url("/fonts/OpenSans-VariableFont_wdth\,wght.ttf")
     format("ttf")
 }
+
+body {
+    /*background-image: url("/images/background.jpg");*/
+    background: rgb(214,214,214);
+    background: repeating-linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(213,249,222,1) 51%, rgba(255,255,255,1) 100%);  
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hiddn;
+}
 .title {
-    
-    text-align: center;
-    color: #ffffff;
-    background-color: #48ff76;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    background-color: #d5f9de;
     max-width: fit-content;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left:50%;
     padding-right:50%;
-    border-radius: 0% 0% 7% 7%
+    border-radius: 0% 0% 3% 3%;
+    filter: drop-shadow(0px 0px 25px 25px #4444dd);
 }
 .header {
-    max-height: 20px;
-    max-height: 100px;
+    max-height: 175px;
+    max-width: auto;
 }
 .slogan {
+    margin-bottom: 30px;
+    color: #FFFFFF;
     text-align: center;
+    border-radius: 7% 7% 7% 7%;
+    background-color: #20063B;
+}
+.slogan_contact {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .highlight {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:antiquewhite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+}
+.BrowseHeader {
+    font-size: 200%;
+    padding-top: 300px;
+    text-align: center;
+}
+.ControllerBackground {
+    text-align: center;
+    position: relative;
+
+}
+.ControllerImage {
+    /*max-width: 1750px;*/
+    max-width: 85%;
+    max-height: 970px;;
+    border-radius: 5%;
+}
+.BrowseButton {
+    font-size: 200%;
+    display:inline-block;
+    text-align: center;
+    position: absolute;
+	background-color:#20063B;
+	border-radius: 16px;
+	left: 35%;
+    bottom: 10%;
+    z-index: 2;
+	width: 33%;
+    height: auto;
+    color: white;
+    padding: 12px 24px;
+    border:#d5f9de;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.BrowseItems img {
+    max-width: 300px;
+}
+.BrowseItems {
+    flex-direction: column;
+    display: flexbox;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.Price {
+    color:antiquewhite;
+    font-size: 24px;
+}
+.BrowseItems button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .BrowseItems button:hover {
+    opacity: 0.7;
+  }
+.ContactSection_Image {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    max-width:400px;
+    max-height:auto;
+    float:right;
+}
+.Contact_us {
+    text-align: center;
+    color: #FCFCFC;
+}
+.contact_credentials {
+    text-align: left;
+    margin-left: 25px;
+    padding-bottom: 15px;
+}
+.ContactThings {
+    display:flex;
+    align-content: center;
+}
+.ContactRemote {
+    font-size: 35px;
+    margin-left: 10%;
+    background: rgba(158, 51, 170, 0.4);
+    border-radius: 7%;
+    max-width: 450px;
+}
+.ContactLocation {
+    font-size: 35px;
+    background: rgba(158, 51, 170, 0.4);
+    border-radius: 7%;
+    max-width: 450px;
+    max-height: auto;
+    margin-left: 35%;
+}
+h2 {
+    font-size: 25px;
 }
 nav,
 #menu-checkbox {
@@ -47,7 +172,11 @@ nav a {
     color: #fff;
     padding: 10px 20px;
 }
-
+@media (max-width: 1600px) {
+    .ContactThings {
+        display:block;
+    }
+}
 @media (min-width: 600px){
     nav {
         display:flex;
