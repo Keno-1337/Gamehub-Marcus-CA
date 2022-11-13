@@ -1,15 +1,24 @@
-/* open-sans-regular - latin */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+/* open-sans-300 - latin */
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/open-sans-v34-latin-regular.eot'); /* IE9 Compat Modes */
+    font-weight: 300;
+    src: url('/fonts/open-sans-v34-latin-300.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('../fonts/open-sans-v34-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/open-sans-v34-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/open-sans-v34-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/open-sans-v34-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+         url('/fonts/open-sans-v34-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+
+  }
+  
+  /* open-sans-regular - latin */
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/open-sans-v34-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('/fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+
   }
   
   /* open-sans-300italic - latin */
@@ -17,13 +26,9 @@
     font-family: 'Open Sans';
     font-style: italic;
     font-weight: 300;
-    src: url('../fonts/open-sans-v34-latin-300italic.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/open-sans-v34-latin-300italic.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('../fonts/open-sans-v34-latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/open-sans-v34-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/open-sans-v34-latin-300italic.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/open-sans-v34-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/open-sans-v34-latin-300italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+         url('/fonts/open-sans-v34-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
   }
   
 
@@ -34,6 +39,13 @@ body {
     background-size: cover;
     background-attachment: fixed;
     /*overflow-x: hidden;*/
+}
+a:link {
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+    text-decoration-color:#d5f9de;
 }
 .title {
     display: flex;
@@ -69,6 +81,11 @@ body {
     color:antiquewhite;
     font-family: open-sans-300italic;
     font-size: 40px;
+}
+.highlight_smallfont {
+    font-family: open-sans-300italic;
+    color: #20063B;
+    font-size: 25px;
 }
 .BrowseHeader {
     font-size: 200%;
@@ -126,12 +143,12 @@ body {
     font-size: 24px;
 }
 .BrowseItems button {
-    border: none;
+    text-align: center;
+    border:none;
     outline: 0;
     padding: 12px;
-    color: white;
+    color: #d5f9de;
     background-color: #000;
-    text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
@@ -139,8 +156,8 @@ body {
   
 .BrowseItems button:hover {
     opacity: 0.8;
-    border-color: #FFFFFF;
-    border-width: 2px;
+    border-radius: 7%;
+    font-size: larger;
   }
 .Contact_us,
 .contact_Visit {
@@ -237,6 +254,30 @@ h2 {
 .SomeHistory3 {
     padding-top: 25%;
     padding-bottom: 5%;
+}
+.Checkout_success_box {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 100px;
+    margin-top: 3%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: open-sans-regular;
+    text-align: center;
+}
+.Checkout_success_box span:hover {
+    opacity: 0.8;
+    padding:12px;
+    border: #20063B;
+    font-size: 30px;
+}
+.Checkout_success_thanks {
+    padding-top: 3%;
+    text-align: center;
+}
+.Checkmark_Icon {
+    max-width: 175px;
+    max-height: auto;
 }
 nav,
 #menu-checkbox {
