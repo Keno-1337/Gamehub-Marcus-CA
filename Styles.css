@@ -36,7 +36,8 @@
     background: url(/images/testbg.png);
     background-size: cover;
 }
-.ourmission_bg {
+.ourmission_bg,
+.contact_bg {
     background: rgb(214,214,214); 
     background: repeating-linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(213,249,222,1) 51%, rgba(255,255,255,1) 100%);
 }
@@ -141,9 +142,14 @@ a:hover {
     border:#d5f9de;
     cursor: pointer;
 }
+.BrowseButton button:hover {
+    backdrop-filter: blur(200px);
+    font-size: larger;
+}
 .BrowseItems img {
     max-width: 300px;
 }
+
 .BrowseItems {
     color: #d5f9de;
     backdrop-filter: blur(10px);
@@ -246,9 +252,14 @@ h2 {
     text-align: center;
 }
 .History_section1 {
-    padding-left: 25%;
+    text-align: center;
+    margin-left: 25%;
     align-content: center;
     max-width: 850px;
+}
+.History_section1 h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:35px;
 }
 .SomeHistory,
 .SomeHistory3 {
@@ -293,10 +304,6 @@ h2 {
     text-align: center;
 }
 .Checkout_success_box span:hover {
-    opacity: 0.8;
-    padding:12px;
-    border: #20063B;
-    font-size: 30px;
 }
 .Checkout_success_thanks {
     padding-top: 3%;
