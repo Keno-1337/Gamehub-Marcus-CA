@@ -30,7 +30,21 @@
     src: local(''),
          url('/fonts/open-sans-v34-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
   }
-  
+  .highlight,
+  .highlight_smallfont,
+  .BrowseHeader,
+  .highlight,
+  .History_header,
+  .slogan_contact,
+  .slogan,
+  .ContactLocal,
+  .contact_credentials,
+  .SomeHistory,
+  .Somehistory2,
+  .SomeHistory3,
+  .Checkout_success_box {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
 .index_bg,
 .browse_bg {
     background: url(/images/testbg.png);
@@ -74,7 +88,6 @@ a:hover {
     max-width: auto;
 }
 .slogan {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 26%;
     margin-right: 26%;
     border-radius: 5%;
@@ -89,22 +102,14 @@ a:hover {
 .slogan_contact {
     font-size: 40px;
     text-align: center;
-    font-family: open-sans-regular;
     margin-bottom: 5%;
 }
-.highlight {
-    color:antiquewhite;
-    font-family: open-sans-300italic;
-    font-size: 40px;
-}
 .highlight_smallfont {
-    font-family: open-sans-300italic;
     color: #20063B;
     font-size: 25px;
 }
 .BrowseHeader {
     color:#d5f9de;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
     margin-left: 25%;
     margin-right: 25%;
     border-radius: 5%;
@@ -236,7 +241,6 @@ a:hover {
 .ContactLocal {
     padding-left: 8%;
     padding-top: 5%;
-    font-family: open-sans-regular;
     padding-bottom:5%;
 }
 .ContactLocal img {
@@ -248,10 +252,11 @@ h2 {
     font-size: 25px;
 }
 .History_header {
-    font-family: open-sans-regular;
+    font-size: 40px;
     text-align: center;
 }
 .History_section1 {
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
     margin-left: 25%;
     align-content: center;
@@ -259,13 +264,12 @@ h2 {
 }
 .History_section1 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:35px;
+
 }
 .SomeHistory,
 .SomeHistory3 {
     padding-left: 10%;
-    font-family: open-sans-regular;
-    font-size: 25px;
+    font-size: 23px;
 }
 .SomeHistory img,
 .SomeHistory3 img {
@@ -275,8 +279,7 @@ h2 {
     padding-right: 5%;
 }
 .Somehistory2 {
-    font-family: open-sans-regular;
-    font-size: 25px;
+    font-size: 23px;
     padding-left: 9%;
     padding-right: 12%;
     padding-top: 15%;
@@ -300,10 +303,7 @@ h2 {
     margin-top: 3%;
     margin-left: 25%;
     margin-right: 25%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-}
-.Checkout_success_box span:hover {
 }
 .Checkout_success_thanks {
     padding-top: 3%;
