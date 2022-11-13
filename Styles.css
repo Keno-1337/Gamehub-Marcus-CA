@@ -56,12 +56,8 @@
     background: repeating-linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(213,249,222,1) 51%, rgba(255,255,255,1) 100%);
 }
 body {
-   /* background: rgb(214,214,214); 
-    background: repeating-linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(213,249,222,1) 51%, rgba(255,255,255,1) 100%); 
-   */
     background-size: cover;
     background-attachment: fixed;
-    /*overflow-x: hidden;*/
 }
 a:link {
     text-decoration:none;
@@ -344,13 +340,6 @@ nav a {
         display:block;
     }
 }
-
-/*@media (max-width: 1600px) {  TOFIX
-    .ContactThings {
-        text-align: center;
-    }
-}
-*/
 @media (max-width: 800px) {
     .Checkout_success_box {
         display:block;
