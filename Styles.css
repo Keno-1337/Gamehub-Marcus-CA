@@ -373,11 +373,16 @@ nav a {
 }
 @media (min-width: 600px){
     nav {
+        position: fixed;
         display: flex;
     }
     .hamburger-icon {
         display:none;
     }
+}
+.navdiv {
+    z-index: 100;
+    position: fixed;
 }
 @media (max-width: 1000px){
     .Checkout_success_box {
