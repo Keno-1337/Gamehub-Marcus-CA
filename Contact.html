@@ -1,6 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="contact_bg">
+<html lang="en">
 <head>
+    <!-- Hotjar Tracking Code for my site -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3424065,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Gamehub Contact" />
@@ -8,7 +19,7 @@
     <title>Contact us | Gamehub</title>
     <script src="https://kit.fontawesome.com/64a7c5ccad.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="contact_bg">
     <header>
         <div class="navdiv">
         <input type="checkbox" id="menu-checkbox" />
@@ -28,20 +39,24 @@
     <h1>Get in touch</h1>
     <h2>We're eager to help</h2>
 </section>
-
 <section class="History_section1">
     <div class="SomeHistory">
         <img src="/images/Support_agents.jpg" alt="Support_agents">
         <p Class="Contact_us">Contact us by:</p>
-        <p Class="contact_credentials">Phone: 413 23 423</p>
-        <p Class="contact_credentials">E-Mail: mail@Ghub.com</P>
+    <ul>
+        <li><i class="fa-solid fa-phone" style="float:left;"></i>Phone: 400 13 337</li>
+        <li><i class="fa-solid fa-envelope" style="float:left;""></i>E-Mail: mail@Ghub.com</li>
+    </ul>
     </div>
 
     <div class="ContactLocal">
         <img src="/images/Pool_guys.jpg" class="PoolGuys" alt="Staff">
-        <p Class="contact_Visit">Or come visit us at our shop! Located at:</p>
-        <p Class="contact_Adress">Adresse 123, Norway</p>
+        <ul>
+            <p class="contact_Visit">Or come visit us at our shop! Located at:</p>
+            <li><i class="fa-solid fa-map-location-dot" style="float:left;"></i>Adresse 123, Norway</i></li>
+        </ul>
     </div>
 </section>
+  </div>
 </body>
 </html>

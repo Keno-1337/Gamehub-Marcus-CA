@@ -52,12 +52,15 @@
 }
 .ourmission_bg,
 .contact_bg {
+    color: #000000;
     background: rgb(214,214,214); 
-    background: repeating-linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(213,249,222,1) 51%, rgba(255,255,255,1) 100%);
+    background: repeating-linear-gradient(180deg, rgb(59, 59, 59) 0%, rgb(21, 24, 21) 51%, rgb(0, 0, 0) 100%);
 }
 :root {
+    --Main-h1-size: 3.75em; 
+    --Main-h2-size: 2.25em;
     --Main-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --Mintgreen-font-color: #d5f9de;
+    --Mintgreen-font-color: #d7f9df;
 }
 body {
     background-size: cover;
@@ -88,21 +91,23 @@ a:hover {
     max-width: auto;
 }
 .slogan {
-    margin-left: 26%;
-    margin-right: 26%;
-    border-radius: 5%;
-    background-color:  rgb(32, 6, 59,0.50);
-    backdrop-filter: blur(10px);
+    margin: auto;
+    max-width: 50vmax;
+    background-color:  rgba(32, 6, 59,0.2);
+    backdrop-filter: blur(40px);
     margin-bottom: 30px;
     color: #FFFFFF;
     text-align: center;
-    border-radius: 7% 7% 7% 7%;
-    background-color: rgba(32, 6, 59,0.85);
 }
 .slogan_contact {
-    font-size: 40px;
+    display: block;
+    color: var(--Mintgreen-font-color);
+    font-size:xx-large;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
+}
+.slogan_contact h2 {
+    font-size: smaller;
 }
 .highlight_smallfont {
     color: #20063B;
@@ -134,14 +139,12 @@ a:hover {
     font-size: 200%;
     display:inline-block;
     text-align: center;
-    position: absolute;
 	background-color:#20063B;
 	border-radius: 5%;
-	left: 35%;
-    bottom: 10%;
     z-index: 2;
 	width: 33%;
-    height: auto;
+    transform: translate(0%, -155%);
+    margin: auto;
     color: white;
     padding: 12px 24px;
     border:#d5f9de;
@@ -203,9 +206,8 @@ a:hover {
   }
 .Contact_us,
 .contact_Visit {
-    font-size: 35px;
-    font-family: open-sans-300italic;
-    color: #3a3a3a;
+    font-size: 25px;
+    color: #000;
 }
 .contact_credentials {
     margin-left: 25px;
@@ -215,7 +217,7 @@ a:hover {
     margin-top: 15%;
 }
 .contact_Adress {
-    font-size: 35px;
+    font-size: 27px;
 }
 .ContactRemote {
     font-size: 35px;
@@ -232,7 +234,7 @@ a:hover {
 .PoolGuys {
     padding-top: 15%;
     padding-left: 10%;
-    border-radius: 7%;
+
 }
 .ContactLocation {
     font-size: 35px;
@@ -257,31 +259,40 @@ h2 {
     font-size: 25px;
 }
 .History_header {
-    font-size: 40px;
+    color: #fff;
+    font-size: 3.75em;
     text-align: center;
 }
 .History_section1 {
-    font-family:'Times New Roman', Times, serif;
-    text-align: justify;
-    margin-left: 25%;
-    align-content: center;
-    max-width: 850px;
+    /* From https://css.glass */
+    background: rgba(215, 249, 223, 0.82);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(215, 249, 223, 0.3);
+    color: #000;
+    margin: auto;
+    max-width: 1000px;
+    padding-right: 50px;
+    padding-bottom: 200px;
 }
+
 .History_section1 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 .SomeHistory,
 .SomeHistory3 {
+    text-align: center;
     padding-left: 10%;
     font-size: 23px;
 }
 .SomeHistory img,
 .SomeHistory3 img {
     max-width: 355px;
-    border-radius: 7%;
     float:left;
     padding-right: 5%;
+    padding-top: 1rem;
 }
 .Somehistory2 {
     font-size: 23px;
@@ -349,8 +360,11 @@ nav {
     text-align: center;
     position: fixed;
     z-index: 100;
-    border-radius: 10% 10% 10% 10%;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.73);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.3px);
+    -webkit-backdrop-filter: blur(13.3px);
+    border: 1px solid rgba(0, 0, 0, 1);
 }
 nav a {
     display:block;
@@ -396,6 +410,23 @@ nav a {
         margin-left: 0px; 
     }
 }
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+.contact_fa_pos {
 
+}
+.fa-solid {
+    margin-right: 10px;
+    float:left;
+    color:#000;
+  }
+  
 /* max-width = if size equal to or smaller than x
     min-width = if size equal to or bigger than x*/
