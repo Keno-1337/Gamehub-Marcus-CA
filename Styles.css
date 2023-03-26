@@ -77,26 +77,31 @@ a:hover {
     background-color: var(--Mintgreen-font-color);
     display: flex;
     justify-content: center;
-    color: #000000;
+    color: #000;
+    box-shadow: 5px 5px 5px 5px rgba(36, 36, 36, 0.75);
     max-width: fit-content;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left:50%;
     padding-right:50%;
     border-radius: 0% 0% 3% 3%;
-    filter: drop-shadow(0px 0px 25px 25px #4444dd);
+    filter: drop-shadow(0px 0px 25px 25px #09ff00);
 }
 .header {
-    max-height: 175px;
+    max-height: 125px;
     max-width: auto;
 }
+.header img {
+    max-height: fit-content;
+}
 .slogan {
+    border-radius: 5px;
     margin: auto;
     max-width: 50vmax;
-    background-color:  rgba(32, 6, 59,0.2);
-    backdrop-filter: blur(40px);
+    background-color:  rgba(32, 6, 59,0.65);
+    backdrop-filter: blur(10px);
     margin-bottom: 30px;
-    color: #FFFFFF;
+    color:var(--Mintgreen-font-color);
     text-align: center;
 }
 .slogan_contact {
@@ -259,13 +264,13 @@ h2 {
     font-size: 25px;
 }
 .History_header {
-    color: #fff;
+    color: var(--Mintgreen-font-color);
     font-size: 3.75em;
     text-align: center;
 }
 .History_section1 {
     /* From https://css.glass */
-    background: rgba(215, 249, 223, 0.82);
+    background: rgba(215, 249, 223, 0.72);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.2px);
@@ -277,7 +282,9 @@ h2 {
     padding-right: 50px;
     padding-bottom: 200px;
 }
-
+.History_section1 fa-solid {
+    color: green;
+}
 .History_section1 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -419,9 +426,6 @@ li {
     font-size: 18px;
     margin-bottom: 10px;
   }
-.contact_fa_pos {
-
-}
 .fa-solid {
     margin-right: 10px;
     color:#000;
