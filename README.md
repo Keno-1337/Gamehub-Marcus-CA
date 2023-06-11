@@ -27,6 +27,7 @@ The site needs to have every page listed in the site architecture on your chosen
   ## Languages
    - HTML
    - CSS
+   - JS
   ## Hosted On
 [Netlify](https://netlify.com/)
 
